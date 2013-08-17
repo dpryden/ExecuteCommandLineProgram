@@ -1,4 +1,4 @@
-﻿// This code was copied from http://stackoverflow.com/a/4587739/173497
+// This code was copied from http://stackoverflow.com/a/4587739/173497
 
 namespace ExecuteCommandLineProgram
 {
@@ -68,8 +68,7 @@ namespace ExecuteCommandLineProgram
             catch (Exception ex)
             {
                 process.Kill();
-                processStream.Stop();
-                throw ex;
+                throw;
             }
             finally
             {
