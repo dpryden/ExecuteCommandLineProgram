@@ -1,4 +1,15 @@
 // This code was copied from http://stackoverflow.com/a/4587739/173497
+// and http://www.hanselman.com/blog/SoManyMistakesForMeToMakeSoLittleTimecapturingStandardErrorAndStandardOutput.aspx
+// TODO: This class needs some unit tests.
+// TODO: Instead of taking a bunch of arguments, there should be an overload
+//       of the RunProgram method that could take a builder object of some
+//       kind -- or perhaps CommandLineProgramProcess could become that builder
+//       class itself.
+// TODO: "CommandLineProgramProcess" is annoyingly verbose. Daniel Pryden
+//       named his version of this class "Subprocess", since he modeled it
+//       somewhat after the Python subprocess module. If "subprocess" is not
+//       clear enough, maybe name it "CommandLineProcess" or even just 
+//       "ConsoleProcess" for short?
 
 namespace ExecuteCommandLineProgram
 {
